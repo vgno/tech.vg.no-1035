@@ -5,6 +5,6 @@ Repository for blog post: PHP - Perform requests in parallel (http://tech.vg.no/
 
 Running
 =======
- * Run composer install to install dependencies (getcomposer.org)
+ * Run composer install to install dependencies (http://getcomposer.org/)
  * Fire it up in a browser
 
