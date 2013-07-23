@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+    <title>PHP: Performing requests in parallel</title>
+    <style>a { color: blue; }</style>
+</head>
+
+<body>
+    <h1>PHP: Performing requests in parallel</h1>
+    <ul class="demos">
+        <li><a href="single.php">Regular curl (one-by-one)</a></li>
+        <li><a href="multi.php">Curl multi (parallel requests)</a></li>
+        <li><a href="guzzle.php">Guzzle + multi (parallel requests)</a></li>
+    </ul>
+
+    <code><pre class="result"></pre></code>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+    jQuery(function($) {
+        var result = $('.result');
+        $('.demos a').on('click', function(e) {
+            e.preventDefault();
+            result.html('Loading... (might take a while)');
+            result.load(this.href);
+        });
+    });
+    </script>
+</body>
+</html>

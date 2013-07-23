@@ -1,0 +1,16 @@
+{
+    "name": "vgnett/multi-curl-test",
+    "description": "Simple test/example of curl_multi vs regular curl",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Espen Hovlandsdal",
+            "email": "espen@hovlandsdal.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.0.0",
+        "guzzle/guzzle": "3.7.1",
+        "ext-curl": "*"
+    }
+}
